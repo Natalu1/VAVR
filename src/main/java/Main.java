@@ -21,5 +21,17 @@ public class Main {
 
         System.out.println("FINISH");
 
+        List<String> extendendList = VavrOperations.addElement(vavrList, "3");
+        Set<String> extendendSet = VavrOperations.addElement(vavrSet, "3");
+        Map<String, String> extendendMap = VavrOperations.addElement(vavrMap, "3", "three");
+
+        List<String> extendendList1 = VavrOperations.addElement(extendendList, "3");
+        Set<String> extendendSet1 = VavrOperations.addElement(extendendSet, "3");
+        Map<String, String> extendendMap1 = VavrOperations.addElement(extendendMap, "3", "three");
+
+        List<String> reducedList = VavrOperations.removeElement(extendendList1, "3");
+        Set<String> reducedSet = VavrOperations.removeElement(extendendSet1, "3");
+        Map<String, String> reducedMap = VavrOperations.removeElement(extendendMap1, "3");
+        System.out.println("FINISH");
     }
 }
